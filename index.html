@@ -4,46 +4,89 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather App</title>
+  <title>SkyCast | Premium Weather Experience</title>
+  <meta name="description" content="A modern, high-performance weather application providing real-time updates with a premium user interface.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   
-  <div class="container">
+  <main class="app-container" id="app-container">
+    <div class="overlay"></div>
+    
+    <header class="search-section">
+      <form id="weather-form" class="search-form">
+        <div class="input-wrapper">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" placeholder="Search for a city..." class="search-input" id="search-input" autocomplete="off"/>
+        </div>
+        <button type="submit" class="search-button">Explore</button>
+      </form>
+    </header>
 
-    <div class="weather_container">
-      
-      <div class="temp">
-        <p>20</p>
+    <section class="weather-content" id="weather-content">
+      <div class="main-card glass">
+        <div class="weather-header">
+          <div class="location-box">
+            <h1 id="city-name">Mumbai</h1>
+            <p id="date-time">May 07, 2026 | Thursday 18:07</p>
+          </div>
+          <div class="condition-badge" id="condition-text">Clear Sky</div>
+        </div>
+
+        <div class="temp-display">
+          <img id="weather-icon" src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather Icon" class="weather-icon">
+          <div class="temp-value">
+            <span id="temp-num">20</span><span class="unit">°C</span>
+          </div>
+        </div>
+
+        <div class="details-grid">
+          <div class="detail-item glass-sm">
+            <i class="fas fa-droplet"></i>
+            <div class="detail-info">
+              <span>Humidity</span>
+              <p id="humidity">45%</p>
+            </div>
+          </div>
+          <div class="detail-item glass-sm">
+            <i class="fas fa-wind"></i>
+            <div class="detail-info">
+              <span>Wind Speed</span>
+              <p id="wind-speed">12 km/h</p>
+            </div>
+          </div>
+          <div class="detail-item glass-sm">
+            <i class="fas fa-temperature-half"></i>
+            <div class="detail-info">
+              <span>Feels Like</span>
+              <p id="feels-like">22°C</p>
+            </div>
+          </div>
+          <div class="detail-item glass-sm">
+            <i class="fas fa-eye"></i>
+            <div class="detail-info">
+              <span>Visibility</span>
+              <p id="visibility">10 km</p>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="time_location">
-        <p>Delhi</p>
-        <span>12:58 - Monday 2025-09-04</span>
-      </div>
-
-      <div class="condition">
-        <p></p>
-
-        <p></p>
-      </div>
-
+    <div class="loader" id="loader">
+      <div class="spinner"></div>
     </div>
-    <nav>
+  </main>
 
-       <form>
-          <input type='text' placeholder="Search for a location" class='search_area'/>
-          <button type='submit'>Search Button</button>
-       </form>
-
-    </nav>
-
-  </div>
-
-  
-
-
+  <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
-
 </html>
