@@ -41,9 +41,5 @@ To run this project locally, simply follow these steps:
 This project uses [WeatherAPI](https://www.weatherapi.com/). 
 The API key is currently included in `script.js` for demonstration purposes. If you plan to fork and deploy this application, it is highly recommended to get your own free API key from their website.
 
-## 🎨 Design Philosophy
-
-SkyCast was built with a strong focus on **Visual Excellence** and **Rich Aesthetics**. The goal was to transform a standard coding task into an engaging, "interviewer-ready" project that showcases attention to detail, modern CSS capabilities, and smooth micro-interactions.
-
 ---
 *Created by Stacy Vangepuram*
