@@ -1,8 +1,8 @@
-# SkyCast 🌤️ | Premium Weather Experience
+# SkyCast  | Premium Weather Experience
 
 A modern, high-performance weather application built with HTML, CSS, and Vanilla JavaScript. SkyCast delivers real-time weather updates wrapped in a stunning, responsive, and interactive user interface.
 
-## ✨ Features
+##  Features
 
 - **Real-Time Weather Data**: Fetches accurate current weather conditions including Temperature, Humidity, Wind Speed, Visibility, and "Feels Like" temperature.
 - **Dynamic Backgrounds**: The application's animated gradient background automatically shifts its color palette based on the current weather condition (e.g., sunny, rainy, cloudy, snowy).
@@ -10,7 +10,7 @@ A modern, high-performance weather application built with HTML, CSS, and Vanilla
 - **Fully Responsive**: Designed to look great and function perfectly across all devices (mobile, tablet, and desktop).
 - **Error Handling**: Gracefully handles invalid search inputs with user-friendly alerts.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **HTML5**: Semantic structure.
 - **CSS3**: Custom variables, Grid/Flexbox, Animations, and Glassmorphism styling.
@@ -19,7 +19,7 @@ A modern, high-performance weather application built with HTML, CSS, and Vanilla
 - **Google Fonts**: 'Outfit' for modern, clean typography.
 - **FontAwesome**: Scalable vector icons.
 
-## 🚀 Getting Started
+##  Getting Started
 
 To run this project locally, simply follow these steps:
 
@@ -36,7 +36,7 @@ To run this project locally, simply follow these steps:
 3. **Open `index.html` in your browser:**
    You can just double-click the `index.html` file, or use an extension like [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in VS Code.
 
-## 🔑 API Configuration
+##  API Configuration
 
 This project uses [WeatherAPI](https://www.weatherapi.com/). 
 The API key is currently included in `script.js` for demonstration purposes. If you plan to fork and deploy this application, it is highly recommended to get your own free API key from their website.
